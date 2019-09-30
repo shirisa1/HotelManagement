@@ -11,15 +11,23 @@ public class Rooms {
 	private String roomstatus;
 	private double price;
 	private String roomfeatures;
+	private String roomimages;
 	
 	public Rooms() {
 	}
-	public Rooms(long roomid, String roomclass, String roomstatus, double price, String roomfeatures) {
+	public Rooms(long roomid, String roomclass, String roomstatus, double price, String roomfeatures,String roomimages) {
 		this.roomid = roomid;
 		this.roomclass = roomclass;
 		this.roomstatus = roomstatus;
 		this.price = price;
 		this.roomfeatures= roomfeatures;
+		this.roomimages = roomimages;
+	}
+	public String getRoomimages() {
+		return roomimages;
+	}
+	public void setRoomimages(String roomimages) {
+		this.roomimages = roomimages;
 	}
 	public String getRoomfeatures() {
 		return roomfeatures;

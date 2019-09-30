@@ -4,7 +4,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Deluxe - Free Bootstrap 4 Template by Colorlib</title>
+    <title>Search Rooms</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     
@@ -76,7 +76,7 @@
 							<c:forEach items="${roomresult}" var="room">
 		    			<div class="col-sm col-md-6 col-lg-4 ftco-animate">
 		    				<div class="room">
-		    					<a href="viewRoom?roomid=${room.roomid}" class="img d-flex justify-content-center align-items-center" style="background-image: url(/HotelManagement/resources/images/room-1.jpg);">
+		    					<a href="viewRoom?roomid=${room.roomid}" class="img d-flex justify-content-center align-items-center" style="background-image: url(/HotelManagement/resources/images/${room.roomimages});">
 		    						<div class="icon d-flex justify-content-center align-items-center">
 		    							<span class="icon-search2"></span>
 		    						</div>
@@ -84,11 +84,10 @@
 		    					<div class="text p-3 text-center">
 									
 		    						<h3 class="mb-3"><a href="viewRoom?roomid=${room.roomid}">${room.roomclass}</a></h3>
-		    						<p><span class="price mr-2">$${room.price}</span> <span class="per">per night</span></p>
+		    						<p><span class="price mr-2">$${room.price}</span> <span class="per">/ night</span></p>
 		    						<ul class="list">
-		    							<li>${room.roomfeatures}</li>
-		    							<li><span>View:</span> Sea View</li>
-		    							<li><span>Bed:</span> 1</li>
+		    							<li><span>Features </span><br>${room.roomfeatures}</li>
+		    							
 		    						</ul>
 		    						<hr>
 		    						<p class="pt-1"><a href="viewRoom?roomid=${room.roomid}" class="btn-custom">View Room <span class="icon-long-arrow-right"></span></a></p>

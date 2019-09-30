@@ -37,7 +37,7 @@
 
     <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
 	    <div class="container">
-	      <a class="navbar-brand" href="index.html">Grand Budapest</a>
+	      <a class="navbar-brand" href="index.jsp">Grand Budapest</a>
 	      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
 	        <span class="oi oi-menu"></span> Menu
 	      </button>
@@ -117,12 +117,6 @@
 											<td>Price:	</td>
 											<td>$${roomdata.price}<form:hidden path="roomclass" /></td>
 										</tr>
-
-
-										<tr>
-											<td><form:hidden path="roomid" /> <a
-												href="reserveRoom?roomid=${roomdata.roomid}">Reserve</a></td>
-										</tr>
 									</table>
 								</form:form>
 							</div>
@@ -139,119 +133,110 @@
 		            </div>
           		</div>
 
-          		<div class="col-md-12 properties-single ftco-animate mb-5 mt-4">
-          			<h4 class="mb-4">Review &amp; Ratings</h4>
-          			<div class="row">
-          				<div class="col-md-6">
-          					<form method="post" class="star-rating">
-										  <div class="form-check">
-												<input type="checkbox" class="form-check-input" id="exampleCheck1">
-												<label class="form-check-label" for="exampleCheck1">
-													<p class="rate"><span><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i> 100 Ratings</span></p>
-												</label>
-										  </div>
-										  <div class="form-check">
-									      <input type="checkbox" class="form-check-input" id="exampleCheck1">
-									      <label class="form-check-label" for="exampleCheck1">
-									    	   <p class="rate"><span><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star-o"></i> 30 Ratings</span></p>
-									      </label>
-										  </div>
-										  <div class="form-check">
-									      <input type="checkbox" class="form-check-input" id="exampleCheck1">
-									      <label class="form-check-label" for="exampleCheck1">
-									      	<p class="rate"><span><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star-o"></i><i class="icon-star-o"></i> 5 Ratings</span></p>
-									     </label>
-										  </div>
-										  <div class="form-check">
-										    <input type="checkbox" class="form-check-input" id="exampleCheck1">
-									      <label class="form-check-label" for="exampleCheck1">
-									      	<p class="rate"><span><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star-o"></i><i class="icon-star-o"></i><i class="icon-star-o"></i> 0 Ratings</span></p>
-									      </label>
-										  </div>
-										  <div class="form-check">
-									      <input type="checkbox" class="form-check-input" id="exampleCheck1">
-									      <label class="form-check-label" for="exampleCheck1">
-									      	<p class="rate"><span><i class="icon-star"></i><i class="icon-star-o"></i><i class="icon-star-o"></i><i class="icon-star-o"></i><i class="icon-star-o"></i> 0 Ratings</span></p>
-										    </label>
-										  </div>
-										</form>
-          				</div>
-          			</div>
-          		</div>
-          		<div class="col-md-12 room-single ftco-animate mb-5 mt-5">
-          			<h4 class="mb-4">Available Room</h4>
-          			<div class="row">
-          				<div class="col-sm col-md-6 ftco-animate">
-				    				<div class="room">
-				    					<a href="rooms.html" class="img img-2 d-flex justify-content-center align-items-center" style="background-image: url(/HotelManagement/resources/images/room-1.jpg);">
-				    						<div class="icon d-flex justify-content-center align-items-center">
-				    							<span class="icon-search2"></span>
-				    						</div>
-				    					</a>
-				    					<div class="text p-3 text-center">
-				    						<h3 class="mb-3"><a href="rooms.html">Suite Room</a></h3>
-				    						<p><span class="price mr-2">$120.00</span> <span class="per">per night</span></p>
-				    						<hr>
-				    						<p class="pt-1"><a href="room-single.html" class="btn-custom">View Room Details <span class="icon-long-arrow-right"></span></a></p>
-				    					</div>
-				    				</div>
-				    			</div>
-				    			<div class="col-sm col-md-6 ftco-animate">
-				    				<div class="room">
-				    					<a href="rooms.html" class="img img-2 d-flex justify-content-center align-items-center" style="background-image: url(/HotelManagement/resources/images/room-2.jpg);">
-				    						<div class="icon d-flex justify-content-center align-items-center">
-				    							<span class="icon-search2"></span>
-				    						</div>
-				    					</a>
-				    					<div class="text p-3 text-center">
-				    						<h3 class="mb-3"><a href="rooms.html">Family Room</a></h3>
-				    						<p><span class="price mr-2">$20.00</span> <span class="per">per night</span></p>
-				    						<hr>
-				    						<p class="pt-1"><a href="room-single.html" class="btn-custom">View Room Details <span class="icon-long-arrow-right"></span></a></p>
-				    					</div>
-				    				</div>
-				    			</div>
-          			</div>
-          		</div>
+
+
 
           	</div>
           </div> <!-- .col-md-8 -->
-          <div class="col-lg-4 sidebar ftco-animate">
-          
-            <div class="sidebar-box ftco-animate">
-              <h3>More about this room</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus itaque, autem necessitatibus voluptate quod mollitia delectus aut, sunt placeat nam vero culpa sapiente consectetur similique, inventore eos fugit cupiditate numquam!</p>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus itaque, autem necessitatibus voluptate quod mollitia delectus aut, sunt placeat nam vero culpa sapiente consectetur similique, inventore eos fugit cupiditate numquam!</p>
-            </div>
-            
-	      		<div class="sidebar-wrap bg-light ftco-animate">
-	      			<h3 class="heading mb-4">Reserve this room</h3>
-	      			<form action="#">
-	      				<div class="fields">
-		             
-		              <div class="form-group">
-		                <div class="select-wrap one-third">
-	                    <div class="icon"><span class="ion-ios-arrow-down"></span></div>
-	                    <select name="" id="" class="form-control">
-	                    	<option value="">Room Type</option>
-	                    	<option value="">Suite</option>
-	                      <option value="">Family Room</option>
-	                      <option value="">Deluxe Room</option>
-	                      <option value="">Classic Room</option>
-	                      <option value="">Superior Room</option>
-	                      <option value="">Luxury Room</option>
-	                    </select>
-	                  </div>
-		              </div>		   
+			<div class="col-lg-4 sidebar ftco-animate">
 
-		              <div class="form-group">
-		                <input type="submit" value="Search" class="btn btn-primary py-3 px-5">
-		              </div>
-		            </div>
-	            </form>
-	      		</div>
-          </div>
-        </div>
+				
+
+				<div class="sidebar-wrap bg-light ftco-animate">
+
+
+					<div >
+
+						<div class="form-group">
+							<%-- <br><a href="reserveRoom?roomid=${roomdata.roomid}"></a>a
+								<input type="submit" value="Reserve" class="btn btn-primary py-3 px-5"> --%>
+							<div class="d-md-flex mt-5 mb-5">
+
+								<div align="center">
+
+									<form:form method="post" modelAttribute="roomdata">		
+									<h2><a href="reserveRoom?roomid=${roomdata.roomid}">Reserve Now!</a></h2>
+									</form:form>
+								</div>
+							</div>
+						</div>
+
+					</div>
+					<div >
+					<h3>More about this room</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+						Ducimus itaque, autem necessitatibus voluptate quod mollitia
+						delectus aut, sunt placeat nam vero culpa sapiente consectetur
+						similique, inventore eos fugit cupiditate numquam!</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+						Ducimus itaque, autem necessitatibus voluptate quod mollitia
+						delectus aut, sunt placeat nam vero culpa sapiente consectetur
+						similique, inventore eos fugit cupiditate numquam!</p>
+				</div>
+				
+
+				</div>
+				          		<div class="col-md-12 properties-single ftco-animate mb-5 mt-4">
+          			<h4 class="mb-4">Review &amp; Ratings</h4>
+					<div class="row">
+						<div class="col">
+
+							<div class="form-check">
+
+								<label class="form-check-label" for="exampleCheck1">
+									<p class="rate">
+										<span><i class="icon-star"></i><i class="icon-star"></i><i
+											class="icon-star"></i><i class="icon-star"></i><i
+											class="icon-star"></i>  - 100 Reviews</span>
+									</p>
+								</label>
+							</div>
+							<div class="form-check">
+
+								<label class="form-check-label" for="exampleCheck1">
+									<p class="rate">
+										<span><i class="icon-star"></i><i class="icon-star"></i><i
+											class="icon-star"></i><i class="icon-star"></i><i
+											class="icon-star-o"></i>  - 30 Reviews</span>
+									</p>
+								</label>
+							</div>
+							<div class="form-check">
+
+								<label class="form-check-label" for="exampleCheck1">
+									<p class="rate">
+										<span><i class="icon-star"></i><i class="icon-star"></i><i
+											class="icon-star"></i><i class="icon-star-o"></i><i
+											class="icon-star-o"></i>  - 5 Reviews</span>
+									</p>
+								</label>
+							</div>
+							<div class="form-check">
+
+								<label class="form-check-label" for="exampleCheck1">
+									<p class="rate">
+										<span><i class="icon-star"></i><i class="icon-star"></i><i
+											class="icon-star-o"></i><i class="icon-star-o"></i><i
+											class="icon-star-o"></i>  - 0 Ratings</span>
+									</p>
+								</label>
+							</div>
+							<div class="form-check">
+
+								<label class="form-check-label" for="exampleCheck1">
+									<p class="rate">
+										<span><i class="icon-star"></i><i class="icon-star-o"></i><i
+											class="icon-star-o"></i><i class="icon-star-o"></i><i
+											class="icon-star-o"></i>  - 0 Ratings</span>
+									</p>
+								</label>
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
       </div>
     </section> <!-- .section -->
 

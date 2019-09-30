@@ -105,10 +105,10 @@
 	        			<div class="col-md d-flex">
 	        				<div class="form-group p-4 align-self-stretch d-flex align-items-end">
 	        					<div class="wrap">
-			      					<label for="#">Room</label>
+			      					<label for="#">Room Type</label>
 			      					<div class="form-field">
 			        					<div class="select-wrap">
-			                    <div class="icon"><span class="ion-ios-arrow-down"></span></div>
+			                    <div class="icon"></div>
 			                    <select name="keyword" id="" class="form-control">
 			                    	<option value="">All</option>
 			                      <option value="luxury">Luxury</option>
@@ -123,13 +123,13 @@
 	        			<div class="col-md d-flex">
 	        				<div class="form-group p-4 align-self-stretch d-flex align-items-end">
 	        					<div class="wrap">
-			      					<label for="#">Customer</label>
+			      					<label for="#">Guests</label>
 			      					<div class="form-field">
 			        					<div class="select-wrap">
-			                    <div class="icon"><span class="ion-ios-arrow-down"></span></div>
+			                    <div class="icon"></div>
 			                    <select name="" id="" class="form-control">
-			                    	<option value="">1 Adult</option>
-			                      <option value="">2 Adult</option>
+			                      <option value="">1 Adult</option>
+			                      <option value="" selected >2 Adult</option>
 			                      <option value="">3 Adult</option>
 			                      <option value="">4 Adult</option>
 			                      <option value="">5 Adult</option>
@@ -542,7 +542,7 @@
       </div>
     </section>
 
-    <section class="instagram">
+    <section class="instagram pt-5">
       <div class="container-fluid">
         <div class="row no-gutters justify-content-center pb-5">
           <div class="col-md-7 text-center heading-section ftco-animate">
@@ -551,35 +551,35 @@
         </div>
         <div class="row no-gutters">
           <div class="col-sm-12 col-md ftco-animate">
-            <a href="images/insta-1.jpg" class="insta-img image-popup" style="background-image: url(/HotelManagement/resources/images/insta-1.jpg);">
+            <a href="/HotelManagement/resources/images/insta-1.jpg" class="insta-img image-popup" style="background-image: url(/HotelManagement/resources/images/insta-1.jpg);">
               <div class="icon d-flex justify-content-center">
                 <span class="icon-instagram align-self-center"></span>
               </div>
             </a>
           </div>
           <div class="col-sm-12 col-md ftco-animate">
-            <a href="images/insta-2.jpg" class="insta-img image-popup" style="background-image: url(/HotelManagement/resources/images/insta-2.jpg);">
+            <a href="/HotelManagement/resources/images/insta-2.jpg" class="insta-img image-popup" style="background-image: url(/HotelManagement/resources/images/insta-2.jpg);">
               <div class="icon d-flex justify-content-center">
                 <span class="icon-instagram align-self-center"></span>
               </div>
             </a>
           </div>
           <div class="col-sm-12 col-md ftco-animate">
-            <a href="images/insta-3.jpg" class="insta-img image-popup" style="background-image: url(/HotelManagement/resources/images/insta-3.jpg);">
+            <a href="/HotelManagement/resources/images/insta-3.jpg" class="insta-img image-popup" style="background-image: url(/HotelManagement/resources/images/insta-3.jpg);">
               <div class="icon d-flex justify-content-center">
                 <span class="icon-instagram align-self-center"></span>
               </div>
             </a>
           </div>
           <div class="col-sm-12 col-md ftco-animate">
-            <a href="images/insta-4.jpg" class="insta-img image-popup" style="background-image: url(/HotelManagement/resources/images/insta-4.jpg);">
+            <a href="/HotelManagement/resources/images/insta-4.jpg" class="insta-img image-popup" style="background-image: url(/HotelManagement/resources/images/insta-4.jpg);">
               <div class="icon d-flex justify-content-center">
                 <span class="icon-instagram align-self-center"></span>
               </div>
             </a>
           </div>
           <div class="col-sm-12 col-md ftco-animate">
-            <a href="images/insta-5.jpg" class="insta-img image-popup" style="background-image: url(/HotelManagement/resources/images/insta-5.jpg);">
+            <a href="/HotelManagement/resources/images/insta-5.jpg" class="insta-img image-popup" style="background-image: url(/HotelManagement/resources/images/insta-5.jpg);">
               <div class="icon d-flex justify-content-center">
                 <span class="icon-instagram align-self-center"></span>
               </div>
