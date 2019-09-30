@@ -155,7 +155,7 @@
 								<td>price:</td>
 								<td>$${roomdata.price}<form:hidden path="roomclass" /></td>
 							</tr>
-
+<h1></h1>
 
 						</table>
 					</form:form>
