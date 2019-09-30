@@ -63,7 +63,7 @@
           <div class="col-md-9 ftco-animate text-center d-flex align-items-end justify-content-center">
           	<div class="text">
 	            
-	            <h1 class="mb-4 bread">Room Single</h1>
+	            <h1 class="mb-4 bread">${roomdata.roomclass} Suite</h1>
             </div>
           </div>
         </div>
@@ -77,17 +77,14 @@
           <div class="col-lg-8">
           	<div class="row">
           		<div class="col-md-12 ftco-animate">
-          			<h2 class="mb-4"></h2>
-          			<div class="single-slider owl-carousel">
+          			<h2 class="mb-4">${roomdata.roomclass} Suite</h2>
+          			<div >
+          			
           				<div class="item">
-          					<div class="room-img" style="background-image: url(/HotelManagement/resources/images/room-1.jpg);"></div>
+          					<div class="room-img" style="background-image: url(/HotelManagement/resources/images/${roomdata.roomimages};"></div>
           				</div>
-          				<div class="item">
-          					<div class="room-img" style="background-image: url(/HotelManagement/resources/images/room-2.jpg);"></div>
-          				</div>
-          				<div class="item">
-          					<div class="room-img" style="background-image: url(/HotelManagement/resources/images/room-3.jpg);"></div>
-          				</div>
+          			
+          				
           			</div>
           		</div>
           		<div class="col-md-12 room-single mt-4 mb-5 ftco-animate">

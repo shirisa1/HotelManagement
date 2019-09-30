@@ -36,7 +36,7 @@
       
     <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
 	    <div class="container">
-	      <a class="navbar-brand" href="index.html">Deluxe</a>
+	      <a class="navbar-brand" href="index.html">Grand Budapest</a>
 	      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
 	        <span class="oi oi-menu"></span> Menu
 	      </button>
@@ -72,44 +72,13 @@
 
     <section class="ftco-section contact-section bg-light">
 	<div class="container">
-		<div class="row d-flex mb-5 contact-info">
-			<div class="col-md-12 mb-4">
-				<h2 class="h3">Contact Information</h2>
-			</div>
-			<div class="w-100"></div>
-			<div class="col-md-3 d-flex">
-				<div class="info bg-white p-4">
-					<p>
-						<span>Address:</span> 198 West 21th Street, Suite 721 New York NY
-						10016
-					</p>
-				</div>
-			</div>
-			<div class="col-md-3 d-flex">
-				<div class="info bg-white p-4">
-					<p>
-						<span>Phone:</span> <a href="tel://1234567920">+ 1235 2355 98</a>
-					</p>
-				</div>
-			</div>
-			<div class="col-md-3 d-flex">
-				<div class="info bg-white p-4">
-					<p>
-						<span>Email:</span> <a href="mailto:info@yoursite.com">info@yoursite.com</a>
-					</p>
-				</div>
-			</div>
-			<div class="col-md-3 d-flex">
-				<div class="info bg-white p-4">
-					<p>
-						<span>Website</span> <a href="#">yoursite.com</a>
-					</p>
-				</div>
-			</div>
-		</div>
+
 		<div class="row block-9">
+		
 			<div class="col-md-6 order-md-last d-flex">
+			
 				<form action="#" class="bg-white p-5 contact-form">
+					<h3>step 1: contact info</h3>
 					<div class="form-group">
 						<input type="text" class="form-control" placeholder="Your Name">
 					</div>
@@ -117,14 +86,23 @@
 						<input type="text" class="form-control" placeholder="Your Email">
 					</div>
 					<div class="form-group">
-						<input type="text" class="form-control" placeholder="Subject">
+						<input type="number" class="form-control" placeholder="Your Phone">
+					</div>
+					<div class="form-group">
+						<input type="text" class="form-control" placeholder="Billing Address">
+					</div>
+					<h3>step 2: payment info</h3>
+					<div class="form-group">
+						<input class="radio" type="radio" name="cash" value="cash"/><span>&nbsp;&nbsp;&nbsp;Cash</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						<input class="radio" type="radio" name="ppal"value="ppal" /> <span>&nbsp;&nbsp;&nbsp;Paypal</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						<input class="radio" type="radio" name="ppal"value="ppal" /> <span>&nbsp;&nbsp;&nbsp;Credit/Debit</span>
 					</div>
 					<div class="form-group">
 						<textarea name="" id="" cols="30" rows="7" class="form-control"
 							placeholder="Message"></textarea>
 					</div>
 					<div class="form-group">
-						<input type="submit" value="Send Message"
+						<input type="submit" value="Finish Booking"
 							class="btn btn-primary py-3 px-5">
 					</div>
 				</form>
@@ -133,10 +111,18 @@
 
 			<div class="col-md-6 d-flex">
 				<div align="center">
-					<h2>Reserve your room</h2>
+					
 
 					<form:form method="post" modelAttribute="roomdata">
 						<table border="0" cellpadding="5">
+							<h2>Reserve This Room</h2>
+							<tr>
+								<div class="item">
+									<div class="room-img"
+										style="background-image: url(/HotelManagement/resources/images/${roomdata.roomimages};"></div>
+								</div>
+
+							</tr>
 							<tr>
 								<td>Room Number:</td>
 								<td>${roomdata.roomid}<form:hidden path="roomid" /></td>
@@ -161,6 +147,40 @@
 					</form:form>
 				</div>
 			</div>
+			
+			
+		</div>
+				<div class="row d-flex mb-5 contact-info">
+			<div class="col-md-12 mb-4">
+				<h2 class="h3">Contact Information</h2>
+			</div>
+			<div class="w-100"></div>
+			<div class="col-md-3 d-flex">
+				<div class="info bg-white p-4">
+					
+				</div>
+			</div>
+			<div class="col-md-3 d-flex">
+				<div class="info bg-white p-4">
+					<p>
+						<span>Phone:</span> <a href="tel://1234567920">+ 1235 2355 98</a>
+					</p>
+				</div>
+			</div>
+			<div class="col-md-3 d-flex">
+				<div class="info bg-white p-4">
+					<p>
+						<span>Email:</span> <a href="mailto:info@yoursite.com">info@yoursite.com</a>
+					</p>
+				</div>
+			</div>
+			<div class="col-md-3 d-flex">
+				<div class="info bg-white p-4">
+					<p>
+						<span>Website</span> <a href="#">yoursite.com</a>
+					</p>
+				</div>
+			</div>
 		</div>
 	</div>
 	</section>
@@ -172,7 +192,7 @@
         <div class="row mb-5">
           <div class="col-md">
             <div class="ftco-footer-widget mb-4">
-              <h2 class="ftco-heading-2">Deluxe Hotel</h2>
+              <h2 class="ftco-heading-2">Grand Budapest Hotel</h2>
               <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
               <ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-5">
                 <li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>

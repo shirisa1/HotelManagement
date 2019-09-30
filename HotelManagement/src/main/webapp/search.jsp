@@ -12,10 +12,10 @@
 <div align ="center">
 
     <h2>Customer Manager,${thought}</h2>
-    <form method="get" action="search">
+    <form method="get" action="search1">
         <input type="text" name="keyword1" /> &nbsp;
         <input type="submit" value="Search" />
-    </form><br>
+    </form>
   
     <table border="1" >
         <tr>

@@ -13,6 +13,6 @@ public interface CustomerDao extends CrudRepository<Customer, Long> {
 	@Query(value = "SELECT c FROM Customer c WHERE c.name LIKE '%' || :keyword1 || '%'"
             + " OR c.email LIKE '%' || :keyword1 || '%'"
             + " OR c.address LIKE '%' || :keyword1 || '%'")
-	public List<Customer> search(@Param("keyword") String keyword1);
+	public List<Customer> search(@Param("keyword1") String keyword1);
 
 }

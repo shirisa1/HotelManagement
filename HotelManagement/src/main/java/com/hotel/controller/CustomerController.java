@@ -75,7 +75,7 @@ public class CustomerController {
 		return "redirect:/login";
 	}
 
-	@RequestMapping(value ="search")
+	@RequestMapping(value ="search1")
 	public ModelAndView searchCustomer(@RequestParam String keyword1) {
 		ModelAndView modelAndView =  new ModelAndView("search");
 		List<Customer> result = service.searchCustomers(keyword1);
