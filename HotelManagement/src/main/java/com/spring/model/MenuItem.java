@@ -1,9 +1,14 @@
 package com.spring.model;
 
+import javax.persistence.Entity;
+import javax.persistence.Id;
+
+
+@Entity
 public class MenuItem {
 	
 	
-	
+	@Id
 	private int menuID;
 	private String menuName;
 	private int menuPrice;
