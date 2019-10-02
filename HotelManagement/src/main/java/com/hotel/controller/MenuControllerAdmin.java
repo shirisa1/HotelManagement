@@ -8,6 +8,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
 
@@ -26,10 +27,10 @@ public class MenuControllerAdmin {
 	@RequestMapping(value ="/menuAdd")
 	public String AddMenu(Map<String,Object>model) {
 		model.put("newItem", new Menu());
-		return "add_menu";
+		return "addMenu";
 	}
 	
-	@RequestMapping(value ="/saveMenu")
+	@RequestMapping(value ="/saveMenu", method = RequestMethod.POST)
 	public String SaveMenu (@ModelAttribute("newItem") Menu menu) {
 		menuService.saveMenu(menu);
 		return "redirect:/searchMenu";
@@ -51,13 +52,11 @@ public class MenuControllerAdmin {
 	}
 	
 	@RequestMapping(value ="searchMenu")
-	public ModelAndView searchMenu(@RequestParam String keyword) {
+	public ModelAndView searchMenu(@RequestParam String keywordmenu) {
 		ModelAndView modelAndView =  new ModelAndView("menuAdmin");
-		List<Menu> result = menuService.searchMenu(keyword);
-		modelAndView.addObject("menuresult",result);
-		
+		List<Menu> result = menuService.searchMenu(keywordmenu);
+		modelAndView.addObject("menuresult",result);	
 		return modelAndView;
-		
 	}
 	
 }

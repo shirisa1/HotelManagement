@@ -10,8 +10,9 @@ import com.hotel.model.Menu;
 
 
 
+
 public interface MenuDao extends CrudRepository<Menu, Long>{
-	@Query(value = "SELECT *FROM Menu")
+	@Query(value = "SELECT m FROM Menu WHERE m.menuID LIKE '%' || :keywordmenu || '%'")
 	public List<Menu> ListMenu(@Param("keywordmenu") String keywordmenu );
 
 }
