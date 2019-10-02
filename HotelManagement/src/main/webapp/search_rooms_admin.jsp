@@ -17,7 +17,7 @@
         <input type="text" name="keyword1" /> &nbsp;
         <input type="submit" value="Search" />
     </form>
-    <h3><a href="newRoomAdmin">Add New Room</a></h3>
+    <h3><a href="menuAdd">Add New Item to the Menu</a></h3>
     <table border="1" >
         <tr>
             <th>ID</th>
