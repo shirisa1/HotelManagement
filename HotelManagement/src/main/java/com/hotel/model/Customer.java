@@ -13,15 +13,18 @@ public class Customer {
     private String name;
     private String email;
     private String address;
+    private String rsvNo;
  
     public Customer() {
     }
- 
-    protected Customer(String name, String email, String address) {
-        this.name = name;
-        this.email = email;
-        this.address = address;
-    }
+
+	public Customer(Long id, String name, String email, String address, String rsvNo) {
+		this.id = id;
+		this.name = name;
+		this.email = email;
+		this.address = address;
+		this.rsvNo = rsvNo;
+	}
 
 	public Long getId() {
 		return id;
@@ -54,7 +57,16 @@ public class Customer {
 	public void setAddress(String address) {
 		this.address = address;
 	}
+
+	public String getRsvNo() {
+		return rsvNo;
+	}
+
+	public void setRsvNo(String rsvNo) {
+		this.rsvNo = rsvNo;
+	}
  
+    
    
  
 }
