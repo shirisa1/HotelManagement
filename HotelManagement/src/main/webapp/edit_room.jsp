@@ -7,6 +7,30 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>Edit Customer</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,700i" rel="stylesheet">
+
+    <link rel="stylesheet" href="/HotelManagement/resources/css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="/HotelManagement/resources/css/animate.css">
+    
+    <link rel="stylesheet" href="/HotelManagement/resources/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="/HotelManagement/resources/css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="/HotelManagement/resources/css/magnific-popup.css">
+
+    <link rel="stylesheet" href="/HotelManagement/resources/css/aos.css">
+
+    <link rel="stylesheet" href="/HotelManagement/resources/css/ionicons.min.css">
+
+    <link rel="stylesheet" href="/HotelManagement/resources/css/bootstrap-datepicker.css">
+    <link rel="stylesheet" href="/HotelManagement/resources/css/jquery.timepicker.css">
+
+    
+    <link rel="stylesheet" href="/HotelManagement/resources/css/flaticon.css">
+    <link rel="stylesheet" href="/HotelManagement/resources/css/icomoon.css">
+    <link rel="stylesheet" href="/HotelManagement/resources/css/style.css">
 </head>
 <body>
     <div align="center">
@@ -45,5 +69,19 @@
             </table>
         </form:form>
     </div>
+          <script src="/HotelManagement/resources/js/jquery.min.js"></script>
+  <script src="/HotelManagement/resources/js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="/HotelManagement/resources/js/popper.min.js"></script>
+  <script src="/HotelManagement/resources/js/bootstrap.min.js"></script>
+  <script src="/HotelManagement/resources/js/jquery.easing.1.3.js"></script>
+  <script src="/HotelManagement/resources/js/jquery.waypoints.min.js"></script>
+  <script src="/HotelManagement/resources/js/jquery.stellar.min.js"></script>
+  <script src="/HotelManagement/resources/js/owl.carousel.min.js"></script>
+  <script src="/HotelManagement/resources/js/jquery.magnific-popup.min.js"></script>
+  <script src="/HotelManagement/resources/js/aos.js"></script>
+  <script src="/HotelManagement/resources/js/jquery.animateNumber.min.js"></script>
+  <script src="/HotelManagement/resources/js/bootstrap-datepicker.js"></script>
+  <script src="/HotelManagement/resources/js/scrollax.min.js"></script>
+  <script src="/HotelManagement/resources/js/main.js"></script>
 </body>
 </html> 

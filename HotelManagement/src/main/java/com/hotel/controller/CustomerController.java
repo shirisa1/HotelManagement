@@ -38,7 +38,7 @@ public class CustomerController {
 		ModelAndView mv = new ModelAndView();
 
 		List<Customer> listCustomers = service.listCustomers();
-		mv.setViewName("login");
+		mv.setViewName("admincustomer");
 		mv.addObject("username", username);
 		mv.addObject("password", password);
 		mv.addObject("listCustomers", listCustomers);
@@ -90,7 +90,7 @@ public class CustomerController {
     	  session.removeAttribute("username");
     	  session.removeAttribute("thought");
     	  session.removeValue("thought");
-        return "redirect:/login";
+        return "redirect:/index.jsp";
       }
     
     

@@ -21,15 +21,15 @@
                 </tr>
                 <tr>
                     <td>Name: </td>
-                    <td><form:input required path="name" /></td>
+                    <td><form:input path="name" /></td>
                 </tr>
                 <tr>
                     <td>Email: </td>
-                    <td><form:input required path="email" /></td>
+                    <td><form:input  path="email" /></td>
                 </tr>
                 <tr>
                     <td>Address: </td>
-                    <td><form:input required path="address" /></td>
+                    <td><form:input path="address" /></td>
                 </tr>    
                 <tr>
                     <td colspan="2"><input type="submit" value="Save"></td>
