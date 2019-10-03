@@ -16,5 +16,7 @@ public interface RoomsDao extends CrudRepository<Rooms, Long> {
 			+ " AND c.roomstatus LIKE 'empty'")
 			
 	public List<Rooms> searchRooms(@Param("keyword") String keyword );
+	
+	
 
 }

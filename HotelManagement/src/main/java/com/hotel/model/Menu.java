@@ -9,7 +9,6 @@ public class Menu {
 	
 	@Id
 	private long menuID;
-	private String menuType;
 	private String menuName;
 	private String menuDetails;
 	private double menuPrice;
@@ -19,12 +18,6 @@ public class Menu {
 	}
 	public void setMenuID(long menuID) {
 		this.menuID = menuID;
-	}
-	public String getMenuType() {
-		return menuType;
-	}
-	public void setMenuType(String menuType) {
-		this.menuType = menuType;
 	}
 	public String getMenuName() {
 		return menuName;
@@ -47,9 +40,8 @@ public class Menu {
 	
 	public Menu() {}
 	
-	public Menu(long menuID, String menuType, String menuName, String menuDetails, double menuPrice) {
+	public Menu(long menuID, String menuName, String menuDetails, double menuPrice) {
 		this.menuID = menuID;
-		this.menuType = menuType;
 		this.menuName = menuName;
 		this.menuDetails = menuDetails;
 		this.menuPrice = menuPrice;

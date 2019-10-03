@@ -77,19 +77,17 @@
 		
 			<div class="col-md-6 order-md-last d-flex">
 			
-				<form action="#" class="bg-white p-5 contact-form">
+				<form:form action="saveNewWhilePaying" method="post" modelAttribute="customer">
 					<h3>step 1: contact info</h3>
 					<div class="form-group">
-						<input type="text" class="form-control" placeholder="Your Name">
+						<form:input path="name" class="form-control" placeholder="your name"/>
 					</div>
 					<div class="form-group">
-						<input type="text" class="form-control" placeholder="Your Email">
+						<form:input path="email" class="form-control" placeholder="your email"/>
 					</div>
+					
 					<div class="form-group">
-						<input type="number" class="form-control" placeholder="Your Phone">
-					</div>
-					<div class="form-group">
-						<input type="text" class="form-control" placeholder="Billing Address">
+						<form:input path="address" class="form-control" placeholder="your billing address" />
 					</div>
 					<h3>step 2: payment info</h3>
 					<div class="form-group">
@@ -97,15 +95,19 @@
 						<input class="radio" type="radio" name="ppal"value="ppal" /> <span>&nbsp;&nbsp;&nbsp;Paypal</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 						<input class="radio" type="radio" name="ppal"value="ppal" /> <span>&nbsp;&nbsp;&nbsp;Credit/Debit</span>
 					</div>
-					<div class="form-group">
+					<!-- <div class="form-group">
 						<textarea name="" id="" cols="30" rows="7" class="form-control"
 							placeholder="Message"></textarea>
-					</div>
+					</div> -->
 					<div class="form-group">
 						<input type="submit" value="Finish Booking"
 							class="btn btn-primary py-3 px-5">
 					</div>
-				</form>
+				</form:form> 
+		
+            
+                    
+           
 
 			</div>
 
@@ -125,21 +127,20 @@
 							</tr>
 							<tr>
 								<td>Room Number:</td>
-								<td>${roomdata.roomid}<form:hidden path="roomid" /></td>
+								<td>${roomdata.roomid}</td>
 
 							</tr>
 							<tr>
 								<td>Category:</td>
-								<td>${roomdata.roomclass}<form:hidden path="roomclass" /></td>
+								<td>${roomdata.roomclass}</td>
 							</tr>
 							<tr>
 								<td>Features:</td>
-								<td>${roomdata.roomfeatures}<form:hidden
-										path="roomfeatures" /></td>
+								<td>${roomdata.roomfeatures}</td>
 							</tr>
 							<tr>
 								<td>price:</td>
-								<td>$${roomdata.price}<form:hidden path="roomclass" /></td>
+								<td>$${roomdata.price}</td>
 							</tr>
 <h1></h1>
 

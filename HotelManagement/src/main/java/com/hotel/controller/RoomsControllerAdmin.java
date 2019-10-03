@@ -50,7 +50,7 @@ public class RoomsControllerAdmin {
 	}
 //
 	@RequestMapping(value = "/saveEditedRoom", method = RequestMethod.POST)
-	public String saveRooms(@ModelAttribute("customer") Rooms room) {
+	public String saveRooms(Rooms room) {
 		roomServiceAdmin.saveRoomsAdmin(room);
 		return "redirect:/searchRoomsAdmin";
 

@@ -41,36 +41,6 @@ public class RoomsController {
 		return mv;
 	}
 
-//	@RequestMapping("/newRoom")
-//	public String newCustomerForm(Map<String, Object> model) {
-//
-//		model.put("customer", new Customer());
-//		return "new_customer";
-//
-//	}
-//
-//	@RequestMapping(value = "/save", method = RequestMethod.POST)
-//	public String saveCustomer(@ModelAttribute("customer") Customer customer) {
-//		service.saveCustomer(customer);
-//		return "redirect:/login";
-//
-//	}
-//
-//	@RequestMapping(value = "/edit")
-//	public ModelAndView editCustomerForm(@RequestParam long id) {
-//		ModelAndView modelAndView = new ModelAndView("edit_customer");
-//		Customer customer = service.getCustomer(id);
-//		modelAndView.addObject("customer", customer);
-//		return modelAndView;
-//
-//	}
-//
-//	@RequestMapping(value = "/delete")
-//	public String deleteCustomerString(@RequestParam long id) {
-//		service.deleteCustomer(id);
-//		return "redirect:/login";
-//	}
-
 	@RequestMapping(value ="searchRooms")
 	public ModelAndView searchCustomer(@RequestParam String keyword) {
 		ModelAndView modelAndView =  new ModelAndView("search_rooms");
@@ -90,8 +60,9 @@ public class RoomsController {
 
 	}
 	@RequestMapping(value = "/reserveRoom")
-	public ModelAndView reserveRoomForm(@RequestParam long roomid) {
+	public ModelAndView reserveRoomForm(@RequestParam long roomid,Map<String, Object> model) {
 		ModelAndView modelAndView = new ModelAndView("reserve_room");
+		model.put("customer", new Customer());
 		Rooms roomdata = roomService.getRoom(roomid);		
 		modelAndView.addObject("roomdata",roomdata);
 

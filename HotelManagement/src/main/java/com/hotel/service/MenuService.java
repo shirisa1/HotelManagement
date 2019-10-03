@@ -33,7 +33,7 @@ public class MenuService {
 		menuDao.deleteById(id);
 	}
 	public List<Menu> searchMenu(String keywordmenu){
-		return menuDao.ListMenu(keywordmenu);
+		return menuDao.searchMenu(keywordmenu);
 	}
 	
 }
